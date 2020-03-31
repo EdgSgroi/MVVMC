@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F52C4D02433AFF700EC934C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F52C4CF2433AFF700EC934C /* CloudKit.framework */; };
 		4F7EB50B24325D4C00E4AF85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7EB50A24325D4C00E4AF85 /* AppDelegate.swift */; };
 		4F7EB50D24325D4C00E4AF85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7EB50C24325D4C00E4AF85 /* SceneDelegate.swift */; };
 		4F7EB50F24325D4C00E4AF85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7EB50E24325D4C00E4AF85 /* ViewController.swift */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F52C4CD2433AFE000EC934C /* MVVMC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MVVMC.entitlements; sourceTree = "<group>"; };
+		4F52C4CF2433AFF700EC934C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		4F7EB50724325D4C00E4AF85 /* MVVMC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F7EB50A24325D4C00E4AF85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F7EB50C24325D4C00E4AF85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,17 +48,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F52C4D02433AFF700EC934C /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F52C4CE2433AFF700EC934C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F52C4CF2433AFF700EC934C /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4F7EB4FE24325D4B00E4AF85 = {
 			isa = PBXGroup;
 			children = (
 				4F7EB50924325D4C00E4AF85 /* MVVMC */,
 				4F7EB50824325D4C00E4AF85 /* Products */,
+				4F52C4CE2433AFF700EC934C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +83,7 @@
 		4F7EB50924325D4C00E4AF85 /* MVVMC */ = {
 			isa = PBXGroup;
 			children = (
+				4F52C4CD2433AFE000EC934C /* MVVMC.entitlements */,
 				4F7EB53224326D5A00E4AF85 /* Views */,
 				4F7EB52324325E5900E4AF85 /* ViewControllers */,
 				4F7EB52224325E4D00E4AF85 /* ViewModels */,
@@ -344,6 +358,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MVVMC/MVVMC.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 93JG72P729;
 				INFOPLIST_FILE = MVVMC/Info.plist;
@@ -351,10 +366,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.edgarsgroi.MVVMC;
+				PRODUCT_BUNDLE_IDENTIFIER = EdgarTestContainer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -362,6 +377,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MVVMC/MVVMC.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 93JG72P729;
 				INFOPLIST_FILE = MVVMC/Info.plist;
@@ -369,10 +385,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.edgarsgroi.MVVMC;
+				PRODUCT_BUNDLE_IDENTIFIER = EdgarTestContainer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

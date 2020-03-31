@@ -30,4 +30,9 @@ class TripsViewModel {
         let tour = Tour(title: title)
         tours.append(tour)
     }
+    
+    /** Função feita para teste do CloudKit ----- Retirar e refatorar após funcionar*/
+    func newTour(tours: [Tour]) {
+        self.tours = tours
+    }
 }
