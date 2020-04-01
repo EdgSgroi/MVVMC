@@ -19,7 +19,7 @@ class TourCreationViewController: UIViewController {
     
     @IBAction func done(_ sender: Any) {
         navigationController?.viewControllers.forEach({ (vc) in
-            if let editVC = vc as? TripsViewController {
+            if let editVC = vc as? ToursListViewController {
                 let tour: TourStruct = TourStruct(title: lblTourTitle.text ?? "404")
                 editVC.addTour(tour: tour)
             }

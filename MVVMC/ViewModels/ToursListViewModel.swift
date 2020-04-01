@@ -1,5 +1,5 @@
 //
-//  TripsViewModel.swift
+//  ToursListViewModel.swift
 //  MVVMC
 //
 //  Created by Edgar Sgroi on 30/03/20.
@@ -8,9 +8,15 @@
 
 import Foundation
 
-class TripsViewModel {
+protocol ToursListViewDelegate: class {
+    func refresh(_ completion: @escaping ([String]?) -> Void)
+}
+
+class ToursListViewModel {
 //    var tourModel: Tour
     var tours: [Tour]
+    
+    weak var delegate: ToursListViewDelegate?
     
     init(){
 //        self.tourModel = tourModel
@@ -34,5 +40,16 @@ class TripsViewModel {
     /** Função feita para teste do CloudKit ----- Retirar e refatorar após funcionar*/
     func newTour(tours: [Tour]) {
         self.tours = tours
+    }
+    
+    func refreshData(){
+        let service = CloudKitAdapter()
+        service.refresh({ response in
+            if let tours: [String] = response {
+            self.tours = tours.compactMap({
+                Tour(title: $0)
+            })
+        }
+        })
     }
 }

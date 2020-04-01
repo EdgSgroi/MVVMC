@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F0DEF502433E07400D62AB3 /* ToursListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0DEF4F2433E07400D62AB3 /* ToursListViewController.swift */; };
+		4F0DEF532433E2AC00D62AB3 /* CloudKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0DEF522433E2AC00D62AB3 /* CloudKitService.swift */; };
+		4F0DEF552433E2BF00D62AB3 /* CloudKitAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0DEF542433E2BF00D62AB3 /* CloudKitAdapter.swift */; };
 		4F52C4D02433AFF700EC934C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F52C4CF2433AFF700EC934C /* CloudKit.framework */; };
 		4F7EB50B24325D4C00E4AF85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7EB50A24325D4C00E4AF85 /* AppDelegate.swift */; };
 		4F7EB50D24325D4C00E4AF85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7EB50C24325D4C00E4AF85 /* SceneDelegate.swift */; };
@@ -17,13 +20,15 @@
 		4F7EB51A24325D5400E4AF85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F7EB51824325D5400E4AF85 /* LaunchScreen.storyboard */; };
 		4F7EB527243262AB00E4AF85 /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7EB526243262AB00E4AF85 /* Tour.swift */; };
 		4F7EB5292432634200E4AF85 /* Restaurants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7EB5282432634200E4AF85 /* Restaurants.swift */; };
-		4F7EB52F2432666F00E4AF85 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7EB52E2432666F00E4AF85 /* TripsViewController.swift */; };
-		4F7EB531243268AB00E4AF85 /* TripsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7EB530243268AB00E4AF85 /* TripsViewModel.swift */; };
+		4F7EB531243268AB00E4AF85 /* ToursListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7EB530243268AB00E4AF85 /* ToursListViewModel.swift */; };
 		4F7EB53424326DB800E4AF85 /* TourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7EB53324326DB800E4AF85 /* TourTableViewCell.swift */; };
 		4F7EB53624327DDE00E4AF85 /* TourCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7EB53524327DDE00E4AF85 /* TourCreationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F0DEF4F2433E07400D62AB3 /* ToursListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursListViewController.swift; sourceTree = "<group>"; };
+		4F0DEF522433E2AC00D62AB3 /* CloudKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitService.swift; sourceTree = "<group>"; };
+		4F0DEF542433E2BF00D62AB3 /* CloudKitAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitAdapter.swift; sourceTree = "<group>"; };
 		4F52C4CD2433AFE000EC934C /* MVVMC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MVVMC.entitlements; sourceTree = "<group>"; };
 		4F52C4CF2433AFF700EC934C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		4F7EB50724325D4C00E4AF85 /* MVVMC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,8 +42,7 @@
 		4F7EB51B24325D5400E4AF85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F7EB526243262AB00E4AF85 /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
 		4F7EB5282432634200E4AF85 /* Restaurants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurants.swift; sourceTree = "<group>"; };
-		4F7EB52E2432666F00E4AF85 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
-		4F7EB530243268AB00E4AF85 /* TripsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewModel.swift; sourceTree = "<group>"; };
+		4F7EB530243268AB00E4AF85 /* ToursListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursListViewModel.swift; sourceTree = "<group>"; };
 		4F7EB53324326DB800E4AF85 /* TourTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourTableViewCell.swift; sourceTree = "<group>"; };
 		4F7EB53524327DDE00E4AF85 /* TourCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourCreationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F0DEF512433E28E00D62AB3 /* CloudKit */ = {
+			isa = PBXGroup;
+			children = (
+				4F0DEF522433E2AC00D62AB3 /* CloudKitService.swift */,
+				4F0DEF542433E2BF00D62AB3 /* CloudKitAdapter.swift */,
+			);
+			path = CloudKit;
+			sourceTree = "<group>";
+		};
 		4F52C4CE2433AFF700EC934C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				4F52C4CD2433AFE000EC934C /* MVVMC.entitlements */,
+				4F0DEF512433E28E00D62AB3 /* CloudKit */,
 				4F7EB53224326D5A00E4AF85 /* Views */,
 				4F7EB52324325E5900E4AF85 /* ViewControllers */,
 				4F7EB52224325E4D00E4AF85 /* ViewModels */,
@@ -112,7 +126,7 @@
 		4F7EB52224325E4D00E4AF85 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				4F7EB530243268AB00E4AF85 /* TripsViewModel.swift */,
+				4F7EB530243268AB00E4AF85 /* ToursListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -120,7 +134,7 @@
 		4F7EB52324325E5900E4AF85 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				4F7EB52E2432666F00E4AF85 /* TripsViewController.swift */,
+				4F0DEF4F2433E07400D62AB3 /* ToursListViewController.swift */,
 				4F7EB53524327DDE00E4AF85 /* TourCreationViewController.swift */,
 			);
 			path = ViewControllers;
@@ -211,10 +225,12 @@
 				4F7EB53424326DB800E4AF85 /* TourTableViewCell.swift in Sources */,
 				4F7EB53624327DDE00E4AF85 /* TourCreationViewController.swift in Sources */,
 				4F7EB527243262AB00E4AF85 /* Tour.swift in Sources */,
-				4F7EB52F2432666F00E4AF85 /* TripsViewController.swift in Sources */,
-				4F7EB531243268AB00E4AF85 /* TripsViewModel.swift in Sources */,
+				4F0DEF502433E07400D62AB3 /* ToursListViewController.swift in Sources */,
+				4F7EB531243268AB00E4AF85 /* ToursListViewModel.swift in Sources */,
+				4F0DEF552433E2BF00D62AB3 /* CloudKitAdapter.swift in Sources */,
 				4F7EB5292432634200E4AF85 /* Restaurants.swift in Sources */,
 				4F7EB51524325D4C00E4AF85 /* MVVMC.xcdatamodeld in Sources */,
+				4F0DEF532433E2AC00D62AB3 /* CloudKitService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
