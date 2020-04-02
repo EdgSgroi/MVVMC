@@ -18,6 +18,10 @@ class ToursListViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        NotificationCenter.default.addObserver(self,
+        selector: #selector(reloadUI),
+        name: .updateTours,
+        object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -28,6 +32,10 @@ class ToursListViewController: UIViewController {
     
     func addTour(tour: TourStruct) {
         viewModel.newTour(title: tour.title)
+    }
+    
+    @objc func reloadUI() {
+        tableView.reloadData()
     }
 }
 

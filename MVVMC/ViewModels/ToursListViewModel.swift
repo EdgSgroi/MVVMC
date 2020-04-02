@@ -13,13 +13,12 @@ protocol ToursListViewDelegate: class {
 }
 
 class ToursListViewModel {
-//    var tourModel: Tour
+    
     var tours: [Tour]
     
     weak var delegate: ToursListViewDelegate?
     
     init(){
-//        self.tourModel = tourModel
         tours = [Tour]()
     }
     
@@ -49,7 +48,12 @@ class ToursListViewModel {
             self.tours = tours.compactMap({
                 Tour(title: $0)
             })
+            NotificationCenter.default.post(name: .updateTours, object: nil)
         }
         })
     }
+}
+
+extension Notification.Name {
+    static let updateTours = Notification.Name("update_tours_list")
 }

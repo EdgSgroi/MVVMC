@@ -15,6 +15,8 @@ struct TourStruct {
 
 class TourCreationViewController: UIViewController {
     
+    let viewModel: ToursListViewModel = ToursListViewModel()
+    
     @IBOutlet weak var lblTourTitle: UITextField!
     
     @IBAction func done(_ sender: Any) {

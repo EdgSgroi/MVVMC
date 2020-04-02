@@ -20,7 +20,7 @@ class CloudKitAdapter: ToursListViewDelegate {
     func refresh(_ completion: @escaping ([String]?) -> Void) {
         var response: [String]?
         adaptee.refresh({ (result) in
-            if let error = result.error {
+            if let error = result.error{
             print(error.localizedDescription)
             return
             } else {
