@@ -61,12 +61,6 @@ class CloudKitService {
             }
             guard let results = results else { return }
             self.records = results
-//            self.tours = results.compactMap {
-////                self.deployRecord(record: $0, database: self.publicDB)
-//                self.tours.append(self.deployRecord(record: $0, database: self.publicDB))
-//            }
-            
-//            self.viewModel.newTour(tours: tours)
             
             DispatchQueue.main.async {
                 completion(nil)
